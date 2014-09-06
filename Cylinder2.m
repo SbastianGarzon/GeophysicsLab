@@ -16,3 +16,5 @@ subplot(1,2,1)
 mesh(X,Y,gz)
 subplot(1,2,2)
 contourf(X,Y,gz)
+
+%Este programa se escribio en matlab desde mi casa usando una conexion remota a intrafis de la universidad de los Andes.
