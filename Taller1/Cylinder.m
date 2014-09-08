@@ -38,7 +38,7 @@ subplot(2,1,2)
 title 'Anomalia 3d generada por un cilindro de hierro en un capa de arenas'
 xlabel 'x'
 zlabel 'm/s^2'
-ylabel 'y'
+ylabel 'y '
 mesh(X,Y,gz2)
 
 
