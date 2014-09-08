@@ -18,7 +18,7 @@ for z=1:5
     
     subplot(2,1,1)
     xlim ([0,600])
-    title ' Anomalia generada por una esfera de arena con radio variable cada 0,5 metros'
+    title ' Anomalia  generada por una esfera de arena con radio variable cada 0,5 metros'
     xlabel 'x'
 
     hold all
@@ -34,7 +34,7 @@ y1=(-300:0.5:300);
 [X,Y]=meshgrid(x1,y1);
 gz2=((4/3)*pi*G*(a.^3)*deltap*w)./((X.^2+w.^2+Y.^2).^(3/2));
 subplot(2,1,2)
-title 'Anomalia 3d generada por un cilindro de arena en un capa de hierro'
+title 'Anomalia 3d generada por una esfera de arena en un capa de hierro'
 xlabel 'x'
 zlabel 'm/s^2'
 ylabel 'y'
