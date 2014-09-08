@@ -33,7 +33,7 @@ x1=(-300:0.5:300);
 y1=(-300:0.5:300);
 %ploteador
 [X,Y]=meshgrid(x1,y1);
-gcubo1 = (G*deltap*(c.^2))*((X.^2+h.^2+(Y.^2)).^(-1/2))-((X.^2+(h+c).^2+(Y.^2)).^(-1/2))
+gcubo1 = (G*deltap*(c.^2))*((X.^2+h.^2+(Y.^2)).^(-1/2))-((X.^2+(h+c).^2+(Y.^2)).^(-1/2));
 subplot(2,1,2)
 title 'Anomalia 3d generada por un cubo de hierro en un capa de arena'
 xlabel 'x'
