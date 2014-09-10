@@ -1,0 +1,27 @@
+G=6.67384*(10^(-11)) %N*m^2)/kg^2
+p= 1250 %kg/m3 Arcilla
+p2=2700 %kg/m3 Aluminio
+deltap=p2-p %kg/m3
+cara=1 %metros radio
+h= 20 %metros profundidad
+matriz=zeros(600,2);
+gamma=45;
+x= 10;
+z= 4;
+L=2;
+contador=1;
+for x=-300:300
+        parte2=(x+z*cotd(gamma))/((z.^2*(cscd(gamma))^2)+(2*x*z*cotd(gamma))+x.^2)^(1/2)
+        parte3=((x+z*cotd(gamma)+(L*cosd(gamma)))/((L+z*cscd(gamma)).^2+x.^2+(2*x).*(L*cosd(gamma)+z*cotd(gamma))).^(1/2))
+        gztotal= ((G*deltap*(cara.^2))./(x*sind(gamma)))*((parte2-parte3))
+        matriz(contador,1)= contador;
+        matriz (contador,2)=gztotal;
+        contador=contador+1;
+end
+    xlim ([0,600])
+    title ' AnomalÌa generada por una varilla inclinada'
+    xlabel 'x'
+    hold all
+for i=1:600
+         plot(matriz(:,1),matriz(:,2))
+end
