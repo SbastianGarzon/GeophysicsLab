@@ -19,7 +19,7 @@ for z=1:5
     
     subplot(2,1,1)
     xlim ([0,600])
-    title ' Anomalia generada por un cilindro de hierro con radio variable cada 0,5 metros'
+    title ' Anomalia generada por un cilindro  de hierro con radio variable cada 0,5 metros'
     xlabel 'x'
 
     hold all
