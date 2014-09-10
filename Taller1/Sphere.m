@@ -1,5 +1,5 @@
 %Punto 1- Anomalia generada por un mismo contraste de densidad en un cilindro con radio variable cada 5 metros
-G=6,67384*(10^(-11)) %N*m^2)/kg^2
+G=6.67384*(10^(-11)) %N*m^2)/kg^2
 p= 7874 %kg/m3 Hieroo
 p2=1700 %kg/m3 Arena
 deltap=p2-p %kg/m3
@@ -18,7 +18,7 @@ for z=1:5
     
     subplot(2,1,1)
     xlim ([0,600])
-    title ' Anomalia  generada por una esfera de arena con radio variable cada 0,5 metros'
+    title ' Anomalia generada por una esfera de arena con radio variable cada 0,5 metros'
     xlabel 'x'
 
     hold all
@@ -34,7 +34,7 @@ y1=(-300:0.5:300);
 [X,Y]=meshgrid(x1,y1);
 gz2=((4/3)*pi*G*(a.^3)*deltap*w)./((X.^2+w.^2+Y.^2).^(3/2));
 subplot(2,1,2)
-title 'Anomalia 3d generada por una esfera de arena en un capa de hierro'
+title 'Anomalia 3d generada por un esfera de arena en un capa de hierro'
 xlabel 'x'
 zlabel 'm/s^2'
 ylabel 'y'
